@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk2"
+    android:gravity="center_horizontal|top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4B000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/opcionSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppin_medium"
+            android:gravity="center_vertical"
+            android:text="Configuracion"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/btnComandos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#61879FCC"
+            android:fontFamily="@font/poppins_light"
+            android:padding="15dp"
+            android:shadowColor="#000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="Comandos por Voz"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_info_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/boton_corners"
+            android:backgroundTint="#4FFFFFFF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/OpcionSesion"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="Permanercer siempre logeado"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/swt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/boton_corners"
+            android:backgroundTint="#4FFFFFFF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/OpcionSonido"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="Sonido al presionar un objeto"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/switch4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/swt" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGuardaConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#53627E"
+            android:fontFamily="@font/poppins_light"
+            android:padding="15dp"
+            android:shadowColor="#000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="Guardar y Salir"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

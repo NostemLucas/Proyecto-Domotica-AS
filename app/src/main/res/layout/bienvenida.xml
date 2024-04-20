@@ -1,0 +1,170 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2D999"
+    android:backgroundTint="@color/splash"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Bienvenida">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationZ="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/smarthome" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom|end"
+        android:orientation="vertical"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center|clip_vertical"
+            android:padding="10dp"
+            android:text="@string/app_creator"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationZ="3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/poppin_medium"
+            android:gravity="center|clip_vertical"
+            android:shadowColor="#000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="Casa Domotica"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:translationZ="3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/btnComenzar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/teal_700"
+            android:fontFamily="@font/poppins_light"
+            android:shadowColor="#000000"
+            android:shadowDx="4"
+            android:shadowRadius="4"
+            android:text="Ingresar"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="50dp"
+            app:elevation="1dp"
+            tools:layout_editor_absoluteY="504dp" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/poppin_medium"
+            android:shadowColor="#000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="Salir"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="50dp"
+            app:elevation="1dp"
+            app:strokeColor="#ffffff"
+            app:strokeWidth="2dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/montes_bk"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/montes2_bk"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

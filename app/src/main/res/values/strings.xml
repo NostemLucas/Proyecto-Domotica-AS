@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Casa Domotica</string>
+    <string name="registrate"><u>Registrate</u>.</string>
+    <string name="inicia">No tienes una cuenta? <u>Registrate</u>.</string>
+    <string name="app_creator">Limberg Edgar Montes Tancara</string>
+    <string name="crea_cuenta">Ya tienes una cuenta? <u>Inicia Sesion</u>.</string>
+
+
+</resources>

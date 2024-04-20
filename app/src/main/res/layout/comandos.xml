@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lista_usuarios"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/poppin_medium"
+            android:text="Comandos Por Voz"
+            android:textColor="#4E4C4C"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Encender luz de dormitorio"
+            android:textColor="#4E4C4C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Apagar luz de dormitorio"
+            android:textColor="#4E4C4C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Encender luz de salón"
+            android:textColor="#4E4C4C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Apagar luz de salón"
+            android:textColor="#4E4C4C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Encender luz de cocina"
+            android:textColor="#4E4C4C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Apagar luz de cocina"
+            android:textColor="#4E4C4C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Encender luz de escalera"
+            android:textColor="#4E4C4C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Apagar luz de escalera"
+            android:textColor="#4E4C4C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Encender ventilación"
+            android:textColor="#4E4C4C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Apagar ventilación"
+            android:textColor="#4E4C4C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

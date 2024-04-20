@@ -1,0 +1,423 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".Registro">
+
+
+    <View
+        android:id="@+id/nigth_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/night_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/nigth_landscape"
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/night_landscape2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"></ImageView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4F000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="120dp"
+            android:translationY="-250dp"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/estellas_bajas"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/moonanm" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/estellas_bajas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="20dp"
+            android:translationZ="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/estrellas_med" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/stars2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="-100dp"
+            android:translationZ="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/estrellas_med"
+            app:lottie_speed="0.5" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/estrellas_altas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:translationY="-350dp"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/estrellas_med"
+            app:lottie_speed="0.5" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/shinystars"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:translationY="-220dp"
+            android:translationZ="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/estrellas_alt" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/owl"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:translationX="50dp"
+            android:translationY="120dp"
+            android:translationZ="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/buhos" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:translationZ="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4D000000"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:translationZ="10dp">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/poppin_medium"
+                    android:shadowColor="#000000"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:text="Comencemos"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:shadowColor="#000000"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:text="Crea una cuenta"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtCorreo"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Email"
+                    android:textColorHint="#FDFDFD"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxStrokeErrorColor="#ff0121"
+                    app:boxStrokeWidth="3dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30"
+                    app:errorEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:startIconContentDescription="email"
+                    app:startIconDrawable="@drawable/ic_mail">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:inputType="textEmailAddress"
+                        android:shadowColor="#000000"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="4"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtNombres"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Nombres"
+                    android:textColorHint="#FDFDFD"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxStrokeErrorColor="#ff0121"
+                    app:boxStrokeWidth="3dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30"
+                    app:errorEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:startIconContentDescription="email"
+                    app:startIconDrawable="@drawable/icon_persona">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:shadowColor="#000000"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="4"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtApellidos"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Apellidos"
+                    android:textColorHint="#FDFDFD"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxStrokeErrorColor="#ff0121"
+                    app:boxStrokeWidth="3dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30"
+                    app:errorEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:startIconContentDescription="email"
+                    app:startIconDrawable="@drawable/icon_persona">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:shadowColor="#000000"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="4"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Contraseña"
+                    android:textColorHint="#FDFDFD"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxStrokeErrorColor="#ff0121"
+                    app:boxStrokeWidth="3dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:endIconMode="password_toggle"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@null"
+                    app:helperText="La contraseña debe incluir a-Z/A-Z/0-9/$"
+                    app:helperTextTextColor="#FFFFFF"
+                    app:hintAnimationEnabled="true"
+                    app:startIconContentDescription="email"
+                    app:startIconDrawable="@drawable/ic_chain">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:inputType="textPassword"
+                        android:shadowColor="#000000"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="4"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtPasword2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Confirmar Contraseña"
+                    android:textColorHint="#FDFDFD"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxStrokeErrorColor="#ff0121"
+                    app:boxStrokeWidth="3dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:endIconMode="password_toggle"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@null"
+                    app:helperText="La contraseña debe incluir a-Z/A-Z/0-9/$"
+                    app:helperTextTextColor="#FFFFFF"
+                    app:hintAnimationEnabled="true"
+                    app:startIconContentDescription="email"
+                    app:startIconDrawable="@drawable/ic_chain">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:inputType="textPassword"
+                        android:shadowColor="#000000"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="4"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/cambio_botones"
+                    android:fontFamily="@font/poppin_medium"
+                    android:padding="10dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:text="REGISTRATE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppin_medium"
+                        android:gravity="start|center_vertical"
+                        android:shadowColor="#000000"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="4"
+                        android:text="@string/crea_cuenta"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

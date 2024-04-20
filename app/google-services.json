@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "497266226078",
+    "project_id": "casadomotica-101f",
+    "storage_bucket": "casadomotica-101f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497266226078:android:c74bec2d9716f3f2039c8f",
+        "android_client_info": {
+          "package_name": "com.lemtproyecto.casadomotica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497266226078-pfjofvhlgstv3bt49i4tk3cf7op2s31t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDgqoOF9QGKk1KK6IJINKP8L48hPrtoIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497266226078-pfjofvhlgstv3bt49i4tk3cf7op2s31t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_bk">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3B000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_semicircular"
+                    android:backgroundTint="#fff"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imgPerfil"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/user"
+                        android:padding="5dp"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/circularConBorde"
+                        app:strokeColor="@color/black"
+                        app:strokeWidth="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:shadowDx="4"
+                            android:shadowDy="4"
+                            android:shadowRadius="4"
+                            android:text="Bienvenido"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtUsuarioActivo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:shadowDx="4"
+                            android:shadowDy="4"
+                            android:shadowRadius="4"
+                            android:text="Usuario"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/boton_corners"
+            android:backgroundTint="#728c69"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_blanco"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:translationZ="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:shadowColor="#000000"
+                            android:shadowDx="4"
+                            android:shadowDy="4"
+                            android:shadowRadius="4"
+                            android:text="Dormitorio"
+                            android:textColor="#FFFFFF"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/luzDormitorio"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:translationZ="2dp"
+                            app:lottie_rawRes="@raw/ligth_bulb" />
+
+                        <Button
+                            android:id="@+id/btnDormitorio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            android:checkable="true"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="Encender"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            app:cornerRadius="50dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/boton_corners"
+        android:backgroundTint="#728c69"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_blanco"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:translationZ="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:shadowColor="#000000"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="4"
+                        android:text="Salón"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/luzSalon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:translationZ="2dp"
+                        app:lottie_rawRes="@raw/ligth_bulb" />
+
+                    <Button
+                        android:id="@+id/btnSalon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#FFFFFF"
+                        android:checkable="true"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Encender"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:cornerRadius="50dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</HorizontalScrollView>
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/boton_corners"
+            android:backgroundTint="#728c69"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_blanco"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:translationZ="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:shadowColor="#000000"
+                            android:shadowDx="4"
+                            android:shadowDy="4"
+                            android:shadowRadius="4"
+                            android:text=" Escaleras "
+                            android:textColor="#FFFFFF"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/luzEscalera"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:translationZ="2dp"
+                            app:lottie_rawRes="@raw/ligth_bulb" />
+
+                        <Button
+                            android:id="@+id/btnEscalera"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            android:checkable="true"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="Encender"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            app:cornerRadius="50dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/boton_corners"
+            android:backgroundTint="#728c69"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_blanco"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:translationZ="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:shadowColor="#000000"
+                            android:shadowDx="4"
+                            android:shadowDy="4"
+                            android:shadowRadius="4"
+                            android:text="Cocina"
+                            android:textColor="#FFFFFF"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/luzCocina"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:translationZ="2dp"
+                            app:lottie_rawRes="@raw/ligth_bulb" />
+
+                        <Button
+                            android:id="@+id/btnCocina"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            android:checkable="true"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="Encender"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            app:cornerRadius="50dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/boton_corners"
+                    android:backgroundTint="@color/splash2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/borde_blanco"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="16dp"
+                                android:translationZ="3dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_light"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="4"
+                                    android:text="Sistema de Ventilación"
+                                    android:textAppearance="?attr/textAppearanceHeadline6"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btnVentilador"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#FFFFFF"
+                                    android:checkable="true"
+                                    android:fontFamily="@font/poppins_light"
+                                    android:text="Encender"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    app:cornerRadius="50dp" />
+
+                            </LinearLayout>
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/anmVentilador"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:translationZ="2dp"
+                                app:lottie_rawRes="@raw/ven_blanco" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/boton_corners"
+                    android:backgroundTint="@color/splash2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borde_blanco"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:translationZ="3dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_light"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="4"
+                                    android:text="Humedad"
+                                    android:textAppearance="?attr/textAppearanceHeadline6"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtHumedad"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_light"
+                                    android:gravity="center"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="4"
+                                    android:text="0%"
+                                    android:textAppearance="?attr/textAppearanceHeadline6"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/anmhum"
+                                android:layout_width="80dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:translationZ="2dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/humedad" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/boton_corners"
+                    android:backgroundTint="@color/splash2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borde_blanco"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:translationZ="3dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_light"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="4"
+                                    android:text="Temperatura"
+                                    android:textAppearance="?attr/textAppearanceHeadline6"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtTemperatura"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_light"
+                                    android:gravity="center"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="4"
+                                    android:shadowDy="4"
+                                    android:shadowRadius="4"
+                                    android:text="0C"
+                                    android:textAppearance="?attr/textAppearanceHeadline6"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/anmtemp"
+                                android:layout_width="80dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:translationZ="2dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/temperatura"
+                                app:lottie_speed="2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/boton_semicircular"
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageButton
+                        android:id="@+id/btnOpciones"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/rompecabezas"
+                        android:backgroundTintMode="screen"
+                        android:gravity="center" />
+
+                    <ImageButton
+                        android:id="@+id/btnUsuarios"
+                        android:layout_width="36dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/team"
+                        android:gravity="center" />
+
+                    <ImageButton
+                        android:id="@+id/btnMicrofono"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/microfono_color"
+                        android:gravity="center"
+                        app:iconTint="#000000" />
+
+                    <ImageButton
+                        android:id="@+id/btnRegistraCambios"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/lista"
+                        android:gravity="center"
+                        app:iconGravity="start"
+                        app:iconPadding="2dp"
+                        app:iconSize="15dp"
+                        app:iconTint="#FFFFFF" />
+
+
+                    <ImageButton
+                        android:id="@+id/btnCerrarSesion"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/hogar"
+                        android:gravity="center"
+                        app:iconTint="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

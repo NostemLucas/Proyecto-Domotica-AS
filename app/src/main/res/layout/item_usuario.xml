@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/boton_corners"
+    android:backgroundTint="#4BFFFFFF"
+    android:gravity="start|center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgPerfilUsuario"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/user"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/circularConBorde"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNombreUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="Nombre"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtApellidoUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="Apellido"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCorreoUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="Correo"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVer"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#304258"
+        android:fontFamily="@font/poppins_light"
+        android:text="Ver"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:cornerRadius="50dp" />
+
+
+
+</LinearLayout>

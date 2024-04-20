@@ -1,0 +1,274 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/day_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/day_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/sun_shiny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="-60dp"
+        android:translationY="-200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/soleado"
+        app:lottie_speed="0.5"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/birds_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/birds" />
+
+    <ImageView
+        android:id="@+id/day_landscape"
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/day_landscape2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"></ImageView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="40dp"
+        android:translationY="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/happy_bird" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/sparrow" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:translationY="-100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/pato" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#51000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:translationZ="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppin_medium"
+            android:shadowColor="#000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="BIENVENIDO"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins_light"
+            android:shadowColor="#000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="Inicia Sesión"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtCorreo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Email"
+            android:textColorHint="#FDFDFD"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxStrokeErrorColor="#ff0121"
+            app:boxStrokeWidth="3dp"
+            app:errorEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:startIconDrawable="@drawable/ic_mail"
+            app:startIconContentDescription="email"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:shadowColor="#000000"
+                android:inputType="textEmailAddress"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Contraseña"
+            android:textColorHint="#FDFDFD"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxStrokeErrorColor="#ff0121"
+            app:boxStrokeWidth="3dp"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@null"
+            app:hintAnimationEnabled="true"
+            app:startIconDrawable="@drawable/ic_chain"
+            app:startIconContentDescription="email"
+            app:counterEnabled="true"
+            app:counterMaxLength="20">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:inputType="textPassword"
+                android:shadowColor="#000000"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtRecuperar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_vertical|end"
+            android:shadowColor="#000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:singleLine="false"
+            android:text="Olvidaste tu contraseña?"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/cambio_botones"
+            android:fontFamily="@font/poppins_light"
+            android:onClick="Entrar"
+            android:padding="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="INGRESAR"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:cornerRadius="40dp" />
+
+        <TextView
+            android:id="@+id/txtCC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/poppin_medium"
+            android:gravity="center"
+            android:shadowColor="#000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:singleLine="false"
+            android:text="@string/inicia"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationY="80dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
